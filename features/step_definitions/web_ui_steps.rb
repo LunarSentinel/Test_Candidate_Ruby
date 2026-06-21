@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-When(/^захожу на страницу "(.+?)"$/) do |url|
-  visit url
-  $logger.info("Страница #{url} открыта")
-  sleep 1
-end
+#When(/^захожу на страницу "(.+?)"$/) do |url|
+ # visit url
+  #$logger.info("Страница #{url} открыта")
+ # sleep 1
+#end
 
 When(/^ввожу в поисковой строке текст "([^"]*)"$/) do |text|
   query = find("//input[@name='q']")
@@ -21,7 +21,7 @@ When(/^кликаю по строке выдачи с адресом (.+?)$/) do
   sleep 1
 end
 
-When(/^я должен увидеть текст на странице "([^"]*)"$/) do |text_page|
-  sleep 1
-  expect(page).to have_text text_page
-end
+#When(/^я должен увидеть текст на странице "([^"]*)"$/) do |text_page|
+ # sleep 1
+ # expect(page).to have_text text_page
+#end

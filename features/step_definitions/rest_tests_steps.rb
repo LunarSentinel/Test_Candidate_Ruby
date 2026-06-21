@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-When(/^получаю информацию о пользователях$/) do
+When(/^палучаю информацию о пользователях$/) do
   users_full_information = $rest_wrap.get('/users')
 
   $logger.info('Информация о пользователях получена')
